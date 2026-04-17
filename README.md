@@ -5,7 +5,7 @@
 
 ## Integrantes:
 - Nombre Thomas Rodríguez
-- Nombre Brian Villalba
+- Nombre Brian Exequiel Villalba Gutiérrez 
 - Nombre Juan Ignacio González
 
 ## Problema que resuelve
