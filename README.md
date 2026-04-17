@@ -35,20 +35,12 @@
 
 ## Cómo ejecutar el proyecto
 
- - Clonar el repositorio:
-Ejecutar el comando git clone [URL_DEL_REPOSITORIO] en la terminal para obtener una copia local del código.
+1- Clonar el repositorio: git clone <URL_DEL_REPO>
 
- - Instalación de dependencias:
-Acceder a las carpetas de frontend y backend de forma independiente y ejecutar npm install para descargar las librerías necesarias.
+2- Instalar dependencias: Ejecutar npm install en las carpetas de frontend y backend.
 
- - Configuración del entorno:
-Crear un archivo .env en la raíz del backend basado en el ejemplo proporcionado (.env.example) y completar las credenciales de conexión a la base de datos PostgreSQL.
+3- Configurar variables de entorno: Crear archivo .env en el backend con las credenciales de PostgreSQL.
 
- - Preparación de la Base de Datos:
-Asegurarse de que el servicio de PostgreSQL esté activo y ejecutar el comando npm run migrate (o el equivalente según el ORM utilizado) para crear las tablas del sistema de stock.
+4- Preparar base de datos: Ejecutar las migraciones (npm run migrate) para crear las tablas necesarias.
 
- - Lanzamiento del Backend:
-Dentro de la carpeta del servidor, iniciar el servicio mediante el comando npm run dev para habilitar la API.
-
- - Lanzamiento del Frontend:
-Desde la carpeta del cliente móvil, ejecutar npx react-native run-android o npx react-native run-ios para desplegar la aplicación en un emulador o dispositivo físico.
+5- Ejecutar el proyecto: Iniciar el backend con npm run dev y el frontend con npx react-native run-android o ios.
