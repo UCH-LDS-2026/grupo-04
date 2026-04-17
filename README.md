@@ -1,12 +1,12 @@
 #### Universidad Champagnat - Laboratorio de Desarrollo de Software - 2026
 
 # Proyecto Final
-## Grupo N° 1
+## Grupo N° 4
 
 ## Integrantes:
-- Nombre
-- Nombre
-- Nombre
+- Nombre Thomas Rodríguez
+- Nombre Brian Villalba
+- Nombre Juan Ignacio González
 
 ## Problema que resuelve
 
