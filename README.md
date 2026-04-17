@@ -9,7 +9,7 @@
 - Nombre Juan Ignacio González
 
 ## Problema que resuelve
-  - Muchos pequeños comercios en Mendoza aún dependen de registros manuales o la memoria para gestionar su mercadería. Esto provoca pérdidas de capital por falta de stock real, desorden administrativo y una atención al cliente lenta. MendozaStock digitaliza estos procesos para asegurar el control total del inventario y agilizar las ventas.
+  - La solución propuesta permite digitalizar y centralizar el control de inventario en pequeños comercios, eliminando registros manuales en papel. El sistema agiliza la actualización de existencias y el proceso de venta, evitando pérdidas de capital por falta de stock y mejorando la rapidez en la atención al cliente.
 
 ## Usuarios
 
@@ -19,19 +19,19 @@
 
 ## Funcionalidades principales
 
- - Catálogo Dinámico y Categorizado: Registro de artículos con imágenes, precios y categorías para una localización instantánea.
-
- - Monitor de Existencias en Tiempo Real: Actualización automática del inventario tras cada venta, garantizando datos precisos siempre.
-
- - Punto de Venta Móvil : Interfaz para procesar transacciones rápidamente y emitir comprobantes de pago digitales.
+-  Gestión de catálogo: Registro y categorización de productos con precios y descripciones.
+-   Control de stock en tiempo real: Actualización automática de unidades tras cada venta o ingreso.
+-  Punto de Venta : Interfaz para procesar transacciones y registrar pagos rápidamente.
+-  Alertas de stock crítico: Notificaciones automáticas cuando un producto alcanza su nivel mínimo de reposición.
+-  Emisión de recibos digitales: Generación de comprobantes de venta para ser compartidos de forma inmediata.
 
 ## Stack tecnológico
 
-Frontend: React Native
+ - Frontend: React Native
 
-Backend: Node.js con Express
+ - Backend: Node.js con Express
 
-Base de datos: PostgreSQL
+ - Base de datos: PostgreSQL
 
 ## Cómo ejecutar el proyecto
 
