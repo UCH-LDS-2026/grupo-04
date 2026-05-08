@@ -27,9 +27,9 @@
 
 ## Stack tecnológico
 
- - Frontend: React Native
+ - Frontend: Html y Css
 
- - Backend: Node.js con Express
+ - Backend: PHP
 
  - Base de datos: PostgreSQL
 
