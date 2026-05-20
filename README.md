@@ -27,7 +27,7 @@
 
 ## Stack tecnológico
 
- - Frontend: Html y Css
+ - Frontend: Html y CSS
 
  - Backend: PHP
 
