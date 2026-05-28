@@ -1,17 +1,13 @@
-# Archivos de entorno y credenciales de Base de Datos
+Archivos de configuración local y credenciales
 .env
-config.php
-conexion.php
+config.local.php
 
-# Dependencias de PHP 
-vendor/
-
-# Archivos ocultos del sistema operativo y editores de código
+Archivos ocultos del sistema operativo y editores de código
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# Logs de errores del servidor
+Logs de errores del servidor local
 error_log
 *.log
