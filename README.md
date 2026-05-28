@@ -45,3 +45,5 @@
 
 5- Ejecutar el proyecto: Iniciar el backend con npm run dev y el frontend con npx react-native run-android o ios.
 
+Trabajo Practico
+
