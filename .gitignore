@@ -1,7 +1,17 @@
-node_modules
+# Archivos de entorno y credenciales de Base de Datos
 .env
-__pycache__
-*.log
-dist
-build
+config.php
+conexion.php
+
+# Dependencias de PHP (por si usan Composer)
+vendor/
+
+# Archivos ocultos del sistema operativo y editores de código
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs de errores del servidor
+error_log
+*.log
