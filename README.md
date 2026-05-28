@@ -44,3 +44,4 @@
 4- Preparar base de datos: Ejecutar las migraciones (npm run migrate) para crear las tablas necesarias.
 
 5- Ejecutar el proyecto: Iniciar el backend con npm run dev y el frontend con npx react-native run-android o ios.
+
