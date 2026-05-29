@@ -31,7 +31,7 @@
 
  - Backend: PHP
 
- - Base de datos: PostgreSQL
+ - Base de datos: MySQL
 
 ## Cómo ejecutar el proyecto
 
