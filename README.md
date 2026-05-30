@@ -33,18 +33,41 @@
 
  - Base de datos: MySQL
 
-## Cómo ejecutar el proyecto
+**Paso 1: Clonar el repositorio**
+git clone <URL_DEL_REPO>
+Paso 2: Preparar la Base de Datos (MySQL)
 
-1- Clonar el repositorio: git clone <URL_DEL_REPO>
+ 1 Instalar y abrir un entorno de servidor local como XAMPP, WampServer o Laragon.
 
-2- Preparar la Base de Datos: >    * Iniciar el servidor local de MySQL (usando herramientas como XAMPP o WampServer).
-Crear una base de datos llamada mendoza_stock (o el nombre que usen) e importar el archivo del esquema de base de datos
-(schema.sql).
+ 2 Iniciar los servicios de MySQL y Apache.
 
-4- Configurar la conexión: Asegurarse de que el archivo de conexión de PHP tenga las credenciales correctas de su MySQL local (Host, Usuario y Contraseña).
+ 3 Abrir phpMyAdmin (o tu gestor de base de datos preferido) y crear una base de datos nueva llamada mendoza_stock.
 
-5- Ejecutar el Backend: >    * Colocar la carpeta del proyecto dentro del directorio del servidor web (por ejemplo, htdocs en XAMPP) o iniciar el servidor de desarrollo integrado de PHP ejecutando en la terminal: php -S localhost:8000 dentro de la carpeta del backend.
+ 4  Importar el archivo schema.sql (que se encuentra en el repositorio) para crear las tablas y las relaciones automáticamente.
 
-Probar el sistema (API REST): Dado que el Frontend (interfaz gráfica) aún está en desarrollo, las funcionalidades y la lógica de negocio (descuento de stock, creación de ventas) se deben testear enviando peticiones JSON mediante Postman a los endpoints del backend.
+Paso 3: Configurar la conexión del Backend
 
+ 1 Abrir el archivo de conexión PDO en PHP (por ejemplo, conexion.php).
+
+ 2 Verificar que las credenciales coincidan con tu servidor local:
+
+Host: localhost
+
+DB Name: mendoza_stock
+
+User: root
+
+Password:   (vacio en xammp por defecto)
+
+Paso 4: Ejecutar el Servidor
+
+Opción A (XAMPP/WAMP): Mueve la carpeta del proyecto dentro del directorio htdocs (en XAMPP) o www (en WAMP). Luego, accede desde tu navegador a http://localhost/tu_carpeta_del_proyecto.
+
+Opción B (Terminal): Abre la terminal dentro de la carpeta del backend y ejecuta el servidor de desarrollo integrado de PHP con el siguiente comando:
+
+php -S localhost:8000
+Paso 5: Testear la API REST
+Como la interfaz gráfica (Frontend) aún está en desarrollo, la lógica de negocio debe probarse utilizando Postman.
+
+Envía peticiones en formato JSON (GET, POST) a los endpoints correspondientes (por ejemplo: http://localhost:8000/ventas.php) para verificar la creación de ventas y el descuento automático de stock.
 
