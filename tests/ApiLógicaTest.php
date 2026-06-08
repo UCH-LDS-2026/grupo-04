@@ -10,7 +10,7 @@ class ApiLógicaTest extends TestCase {
 
     // TEST 1: Validación de campos obligatorios
     public function testValidacionClienteFallaSiFaltaEmail() {
-        $resultado = validarDatosCliente("Nicolas Fenoy", "");
+        $resultado = validarDatosCliente("Juan Ignacio", "");
         $this->assertFalse($resultado, "La API debería rechazar al cliente si no tiene email.");
     }
 
