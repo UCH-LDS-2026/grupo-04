@@ -70,4 +70,20 @@ Paso 5: Testear la API REST
 Como la interfaz gráfica (Frontend) aún está en desarrollo, la lógica de negocio debe probarse utilizando Postman.
 
 Envía peticiones en formato JSON (GET, POST) a los endpoints correspondientes (por ejemplo: http://localhost:8000/ventas.php) para verificar la creación de ventas y el descuento automático de stock.
+---
+
+## 🧪 TP 4 - Calidad y Testing (Pruebas Unitarias)
+
+El proyecto cuenta con una suite de pruebas automatizadas utilizando el framework **PHPUnit** para garantizar la integridad y el correcto comportamiento de la lógica de negocio core del sistema. 
+
+Se han aislado las reglas críticas en `src/funciones.php` y se ejecutan tres escenarios de prueba automatizados:
+1. **Validación de Clientes:** Verifica que el sistema rechace registros si faltan campos obligatorios (como el correo electrónico).
+2. **Control de Stock Exitoso:** Certifica que se realice correctamente el cálculo matemático de descuento de stock tras una venta regular.
+3. **Bloqueo por Stock Insuficiente:** Garantiza que el sistema bloquee transacciones de forma segura cuando la cantidad solicitada supera las existencias disponibles.
+
+### Paso 6: Ejecutar los Tests de Manera Local
+Para correr los tests desde la consola utilizando el ejecutable incluido en el proyecto, ejecuta el siguiente comando en la terminal:
+
+```bash
+C:\xampp\php\php.exe tests/phpunit-10.5.63.phar tests
 
