@@ -72,20 +72,12 @@ Como la interfaz gráfica (Frontend) aún está en desarrollo, la lógica de neg
 Envía peticiones en formato JSON (GET, POST) a los endpoints correspondientes (por ejemplo: http://localhost:8000/ventas.php) para verificar la creación de ventas y el descuento automático de stock.
 ---
 
-## TP 4 - Calidad y Testing (Pruebas Unitarias)
-El proyecto cuenta con una suite de pruebas automatizadas utilizando el framework PHPUnit para garantizar la integridad y el correcto comportamiento de la lógica de negocio core del sistema.
+## TP 4 y TP 5 - Calidad, Testing y Refactor POO
+El proyecto cuenta con una suite de pruebas automatizadas utilizando el framework PHPUnit para garantizar la integridad y el correcto comportamiento de la lógica de negocio core del sistema. 
 
-Se han aislado las reglas críticas en src/funciones.php y se ejecutan cinco escenarios de prueba automatizados que cubren el 100% de la lógica requerida:
+Para el TP5, toda la lógica de control de inventario fue refactorizada a Programación Orientada a Objetos (POO) dentro de la clase `src/Inventario.php`.
 
-Validación de Clientes (Éxito): Verifica que el sistema apruebe correctamente un registro cuando cuenta con todos los campos obligatorios válidos.
-
-Control de Stock Exitoso: Certifica que se realice correctamente el cálculo matemático de descuento de stock tras una venta regular.
-
-Bloqueo por Stock Insuficiente: Garantiza que el sistema bloquee transacciones de forma segura devolviendo false cuando la cantidad solicitada supera las existencias disponibles.
-
-Validación de Productos (Éxito): Valida que un producto sea aceptado si cuenta con un nombre válido, precio positivo y stock positivo en la base de datos.
-
-Rechazo de Producto por Precio Inválido (Caso Límite): Asegura que el backend rechace y marque como inválido cualquier producto cuyo precio sea menor o igual a cero ($precio <= 0).
-
-Además, como parte de la auditoría de calidad y para entender la trazabilidad del framework en la memoria RAM, el equipo realizó pruebas de inyección de errores controlados documentando el comportamiento del sistema tanto ante fallas lógicas (Failure) como ante errores fatales del motor de PHP (Error). Toda la evidencia, capturas de pantalla y el manual de contingencia se encuentran adjuntos en el archivo corporativo de documentación del repositorio.
-
+### Cómo ejecutar los tests
+Para correr la suite de pruebas automatizadas en un entorno local con XAMPP, ejecuta el siguiente comando en la terminal desde la raíz del proyecto:
+```bash
+J:\xampp\php\php.exe mendoza-stock\tests\phpunit-10.5.63.phar mendoza-stock\tests
