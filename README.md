@@ -80,4 +80,5 @@ Para el TP5, toda la lógica de control de inventario fue refactorizada a Progra
 ### Cómo ejecutar los tests
 Para correr la suite de pruebas automatizadas en un entorno local con XAMPP, ejecuta el siguiente comando en la terminal desde la raíz del proyecto:
 ```bash
-J:\xampp\php\php.exe mendoza-stock\tests\phpunit-10.5.63.phar mendoza-stock\tests
+J:\xampp\php\php.exe mendoza-stock\tests\phpunit-10.5.63.phar mendoza-stock\tests (PC DE ESCRITORIO)
+C:\xampp\php\php.exe mendoza-stock\tests\phpunit-10.5.63.phar mendoza-stock\tests (NOTEBOOK)
