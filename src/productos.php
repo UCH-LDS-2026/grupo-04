@@ -21,5 +21,3 @@ if ($method === 'GET') {
         echo json_encode(["error" => "Datos incompletos"]);
     }
 }
-echo cracion del pull request
-?>
