@@ -1,75 +1,104 @@
-#### Universidad Champagnat - Laboratorio de Desarrollo de Software - 2026
+# 📦 Mendoza Stock - Sistema de Gestión de Inventario
 
-# Proyecto Final
-## Grupo N° 4
-
-## Integrantes:
+#### Universidad Champagnat - Laboratorio de Desarrollo de Software
+**Grupo N° 4**
 - Thomas Rodríguez
-- Brian Exequiel Villalba Gutiérrez 
+- Brian Exequiel Villalba Gutiérrez
 - Juan Ignacio González
-
-## Problema que resuelve
-La solución propuesta permite digitalizar y centralizar el control de inventario en pequeños comercios, eliminando registros manuales en papel. El sistema agiliza la actualización de existencias y el proceso de venta, evitando pérdidas de capital por falta de stock y mejorando la rapidez en la atención al cliente.
-
-## Usuarios
-- **Administrador (Dueño del comercio):** Gestiona el catálogo, controla costos, configura alertas de stock y visualiza métricas de rendimiento.
-- **Operador (Cajero/Repositor):** Realiza búsquedas de productos, registra ventas en tiempo real y actualiza la entrada de mercadería.
-
-## Funcionalidades principales
-- **Interfaz Web Interactiva:** Panel visual dinámico para gestión de catálogo y alertas sin recargar la página.
-- **Gestión de catálogo:** Registro de productos con precios y existencias en tiempo real.
-- **Punto de Venta (API REST):** Endpoints REST para procesar transacciones y consultar productos.
-- **Alertas de stock crítico:** Notificaciones automáticas cuando un producto alcanza un nivel mínimo (5 unidades por defecto).
-
-## Stack tecnológico
-- **Frontend:** HTML5, CSS3 (Bootstrap 5) y JavaScript Asincrónico (`fetch` API).
-- **Backend:** PHP (8.x) estructurado en Programación Orientada a Objetos (POO) y arquitectura REST.
-- **Base de Datos:** MySQL / MariaDB mediante PDO (PHP Data Objects).
-- **Testing:** PHPUnit (Pruebas unitarias automatizadas).
 
 ---
 
-## Guía de Instalación y Ejecución Local
+## 📝 Descripción del Proyecto
+La solución propuesta permite digitalizar y centralizar el control de inventario en pequeños comercios, eliminando registros manuales en papel. El sistema agiliza la actualización de existencias, notifica sobre bajo stock y gestiona el catálogo en tiempo real.
 
-### Paso 1: Preparar la Base de Datos
-1. Iniciar **MySQL** en el servidor local (XAMPP/WAMP).
-2. Abrir phpMyAdmin y crear la base de datos `mendoza_stock`.
-3. Importar el archivo **`mendoza_stock.sql`** ubicado en la raíz del proyecto.
+---
 
-### Paso 2: Configurar Conexión
-Verificar en `conexion.php` las credenciales por defecto:
-- Host: `localhost`
-- Database: `mendoza_stock`
-- User: `root`
-- Password: `` (vacío)
+## 🛠️ Requisitos Previos
 
-### Paso 3: Ejecutar el Servidor
-Iniciar el servidor integrado de PHP desde la raíz del proyecto:
+Antes de comenzar, asegúrate de tener instalado en tu computadora:
+
+1. **PHP 8.x** (o mediante un servidor local como **XAMPP** o **WAMP**).
+2. **MySQL / MariaDB** (incluido en XAMPP/WAMP).
+3. **Git** (para clonar el repositorio).
+4. **Navegador Web** (Chrome, Firefox, Edge).
+
+---
+
+## ⚙️ Guía de Instalación Paso a Paso (Desde Cero)
+
+### 1. Clonar el Repositorio
+Abre tu terminal o consola de comandos y ejecuta:
 ```bash
+git clone [https://github.com/tu-usuario/grupo-04.git](https://github.com/tu-usuario/grupo-04.git)
+cd grupo-04
+2. Configurar la Base de Datos
+Inicia los servicios de Apache y MySQL desde el panel de XAMPP.
+
+Abre tu navegador y entra a phpMyAdmin: http://localhost/phpmyadmin
+
+Crea una nueva base de datos llamada estrictamente: mendoza_stock
+
+Selecciona la base de datos mendoza_stock, ve a la pestaña Importar y selecciona el archivo mendoza_stock.sql ubicado en la raíz del proyecto.
+
+Haz clic en Importar para cargar las tablas e información inicial.
+
+3. Verificar Conexión
+Revisa el archivo conexion.php en la raíz del proyecto. Por defecto viene configurado para entornos locales estándar:
+
+Host: localhost
+
+Base de datos: mendoza_stock
+
+Usuario: root
+
+Contraseña: "" (vacío)
+
+Si tu MySQL local tiene contraseña, modifícala en ese archivo.
+
+4. Iniciar la Aplicación
+Abre la terminal en la carpeta raíz del proyecto y ejecuta el servidor local de PHP:
+
+Bash
+
+
 php -S localhost:8000
-Paso 4: Acceso a la Aplicación y API
-Interfaz Visual (Frontend): Acceder a http://localhost:8000 en el navegador.
+🚀 Uso del Sistema
+Una vez iniciado el servidor, accede desde tu navegador:
 
-Obtener productos (API REST): GET http://localhost:8000/src/productos.php
+🖥️ Interfaz Web (Frontend): Accede a http://localhost:8000
 
-Alertas de stock crítico (API REST): GET http://localhost:8000/src/productos.php?alertas=1
+Permite visualizar los productos en tabla, agregar nuevos ítems y filtrar alertas de stock crítico.
 
-Registrar o consultar ventas: GET / POST http://localhost:8000/src/ventas.php
+🔗 API REST - Todos los productos: http://localhost:8000/src/productos.php
 
-TP4 y TP5 - Testing y Refactor POO
-La lógica de negocio principal del inventario está encapsulada mediante Programación Orientada a Objetos en la clase src/Inventario.php.
+⚠️ API REST - Alertas de Bajo Stock: http://localhost:8000/src/productos.php?alertas=1
 
-Ejecutar Tests Unitarios
-Para correr las pruebas unitarias automatizadas con PHPUnit:
+🧪 Pruebas Unitarias (Testing)
+El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orientada a Objetos en src/Inventario.php y pruebas automatizadas escritas en PHPUnit.
+
+Para ejecutar los tests en tu máquina:
 
 Bash
 
 
 php tests/phpunit-10.5.63.phar tests/InventarioTest.php
+💻 Stack Tecnológico
+Frontend: HTML5, CSS3 (Bootstrap 5) y JavaScript Asincrónico (fetch API).
 
-Una vez reemplazado el texto en tu `README.md`, acordate de subir el cambio a GitHub con:
+Backend: PHP 8 (Programación Orientada a Objetos y API REST).
+
+Base de Datos: MySQL / MariaDB (vía PDO).
+
+Testing: PHPUnit.
+
+
+---
+
+### Para publicar este cambio limpio en GitHub:
+
+Ejecuta estos 3 comandos en tu terminal de VS Code:
 
 ```powershell
 git add README.md
-git commit -m "Docs: Actualizar README con stack tecnológico completo (Frontend y Backend)"
+git commit -m "Docs: Reescribir README con guía de instalación desde cero"
 git push origin main
