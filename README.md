@@ -36,7 +36,7 @@ Abre tu terminal o consola de comandos y ejecuta:
 
 git clone [https://github.com/UCH-LDS-2026/grupo-04.git](https://github.com/UCH-LDS-2026/grupo-04.git)
 cd grupo-04
-2. Configurar la Base de Datos
+### 2. Configurar la Base de Datos
 Inicia los servicios de Apache y MySQL desde el panel de XAMPP.
 
 Abre tu navegador y entra a phpMyAdmin: http://localhost/phpmyadmin
@@ -47,7 +47,7 @@ Selecciona la base de datos mendoza_stock, ve a la pestaña Importar y seleccion
 
 Haz clic en Importar para cargar las tablas e información inicial.
 
-3. Verificar Conexión
+### 3. Verificar Conexión
 Revisa el archivo conexion.php en la raíz del proyecto. Por defecto viene configurado para entornos locales estándar:
 
 Host: localhost
@@ -60,7 +60,7 @@ Contraseña: "" (vacío)
 
 Si tu MySQL local tiene contraseña, modifícala en ese archivo.
 
-4. Iniciar la Aplicación
+### 4. Iniciar la Aplicación
 Abre la terminal en la carpeta raíz del proyecto y ejecuta el servidor local de PHP:
 
 
@@ -79,14 +79,16 @@ Permite visualizar los productos en tabla, agregar nuevos ítems y filtrar alert
  API REST - Alertas de Bajo Stock: http://localhost:8000/src/productos.php?alertas=1
 
  Diagramas de Arquitectura (UML)
-1. Diagrama de Casos de Uso
+# 1. Diagrama de Casos de Uso
+
 ![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/e7f9fbb1d399723c05aa08a49262db86ac35278f/docs/casos_poo.png)
 
-2. Diagrama de Clases (POO)
+# 2. Diagrama de Clases (POO)
+
 ![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/e7f9fbb1d399723c05aa08a49262db86ac35278f/docs/casos_uso.png)
 
 
- Pruebas Unitarias (Testing)
+ ## Pruebas Unitarias (Testing)
 El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orientada a Objetos en src/Inventario.php y pruebas automatizadas escritas en PHPUnit.
 
 Para ejecutar los tests en tu máquina:
@@ -95,7 +97,7 @@ Para ejecutar los tests en tu máquina:
 
 D:\xampp1\php\php.exe tests/phpunit-10.5.63.phar tests/InventarioTest.php
 
- Stack Tecnológico
+ ## Stack Tecnológico
 Frontend: HTML5, CSS3 (Bootstrap 5) y JavaScript Asincrónico (Fetch API).
 
 Backend: PHP 8 (Programación Orientada a Objetos y API REST).
@@ -112,6 +114,6 @@ Una vez reemplazado y guardado el archivo (`Ctrl + S`), ejecutá esto para subir
 
 ```powershell
 git add .
-git commit -m "Docs: Corregir formato README e imagenes de diagramas"
+git commit -m "Descripcion del Cambio"
 git push origin main
 
