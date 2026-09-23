@@ -80,9 +80,11 @@ Permite visualizar los productos en tabla, agregar nuevos ítems y filtrar alert
 
  Diagramas de Arquitectura (UML)
 1. Diagrama de Casos de Uso
+![image alt]( Aquí escriben el permalink de la imagen )
 
 2. Diagrama de Clases (POO)
-![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/1534a1c1a3ec041ff3fe6fda49b1eace2d28e6a9/docs/casos_poo.png)
+![image alt]( Aquí escriben el permalink de la imagen )
+
 
  Pruebas Unitarias (Testing)
 El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orientada a Objetos en src/Inventario.php y pruebas automatizadas escritas en PHPUnit.
