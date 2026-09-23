@@ -99,15 +99,8 @@ Testing: PHPUnit 10.
 
 ---
 
-### Pasos para subir las imágenes y el README:
+### Pasos para subir  el README:
 
-## 📊 Diagramas de Arquitectura (UML)
-
-### 1. Diagrama de Casos de Uso
-![Diagrama de Casos de Uso](docs/casos_uso.png)
-
-### 2. Diagrama de Clases (POO)
-![Diagrama de Clases](docs/clases_poo.png)
 
 2. Corré estos comandos en la terminal de VS Code para mandar todo a GitHub:
 
