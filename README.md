@@ -81,7 +81,7 @@ Permite visualizar los productos en tabla, agregar nuevos ítems y filtrar alert
 ## 📊 Diagramas de Arquitectura (UML)
 
 ### 1. Diagrama de Casos de Uso
-![Diagrama de Casos de Uso](grupo-04/docs/casos_uso.png)
+![Diagrama de Casos de Uso](docs/casos_uso.png)
 
 ### 2. Diagrama de Clases (POO)
 ![Diagrama de Clases](docs/casos_poo.png)
