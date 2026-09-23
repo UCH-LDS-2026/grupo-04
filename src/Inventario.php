@@ -52,4 +52,9 @@ class Inventario {
             return ["status" => "error", "mensaje" => $e->getMessage()];
         }
     }
+
+    public function actualizarStock($id, $nuevoStock) {
+        $stmt = $this->pdo->prepare("UPDATE productos SET stock = ? WHERE id = ?");
+        return $stmt->execute([$nuevoStock, $id]);
+    }
 }
