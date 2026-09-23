@@ -102,14 +102,22 @@ git push origin main
 ![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/e7f9fbb1d399723c05aa08a49262db86ac35278f/docs/casos_uso.png)
 
 
- ## Pruebas Unitarias (Testing)
-El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orientada a Objetos en src/Inventario.php y pruebas automatizadas escritas en PHPUnit.
+### Pruebas Unitarias (Testing)
 
-Para ejecutar los tests en tu máquina:
+El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orientada a Objetos en `src/Inventario.php` y pruebas automatizadas escritas en PHPUnit.
 
+Para ejecutar las pruebas en tu máquina, abre la terminal en la raíz del proyecto y corre:
 
+**Si tienes PHP en el PATH de tu sistema:**
+php tests/phpunit-10.5.63.phar tests/InventarioTest.php
 
-D:\xampp1\php\php.exe tests/phpunit-10.5.63.phar tests/InventarioTest.php
+**Si ejecutas usando el ejecutable directo de XAMPP (Ajustar según tu unidad/carpeta):**
+# Instalación estándar en Disco C:
+C:\xampp\php\php.exe tests/phpunit-10.5.63.phar tests/InventarioTest.php
+
+# Si XAMPP está en otra unidad (ej. Disco D):
+D:\xampp\php\php.exe tests/phpunit-10.5.63.phar tests/InventarioTest.php
+
 
  ## Stack Tecnológico
 Frontend: HTML5, CSS3 (Bootstrap 5) y JavaScript Asincrónico (Fetch API).
