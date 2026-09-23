@@ -61,22 +61,36 @@ Contraseña: "" (vacío)
 Si tu MySQL local tiene contraseña, modifícala en ese archivo.
 
 ### 4. Iniciar la Aplicación
-Abre la terminal en la carpeta raíz del proyecto y ejecuta el servidor local de PHP:
+
+Abre la terminal en la carpeta raíz del proyecto y ejecuta el servidor local de PHP.
+
+> **IMPORTANTE - Ruta de ejecución según tu entorno:**
+> La ruta del ejecutable `php.exe` dependerá de la **unidad de almacenamiento** (`C:`, `D:`, etc.) y la carpeta donde tengas instalado XAMPP en tu equipo.
+
+* **Si tienes PHP agregado a las Variables de Entorno (PATH):**
+  
+  php -S localhost:8000
+Si ejecutas desde XAMPP en Windows (Ajustar según tu disco/unidad):
 
 
 
 
-php -S localhost:8000
- Uso del Sistema
-Una vez iniciado el servidor, accede desde tu navegador:
+# Si XAMPP está en el Disco C:
+C:\xampp\php\php.exe -S localhost:8000
 
- Interfaz Web (Frontend): Accede a http://localhost:8000
+# Si XAMPP está en otra unidad o carpeta (ejemplo Disco D:):
+D:\xampp1\php\php.exe -S localhost:8000
+Una vez iniciado el servidor, abre tu navegador e ingresa a: http://localhost:8000
 
-Permite visualizar los productos en tabla, agregar nuevos ítems y filtrar alertas de stock crítico.
 
- API REST - Todos los productos: http://localhost:8000/src/productos.php
+---
 
- API REST - Alertas de Bajo Stock: http://localhost:8000/src/productos.php?alertas=1
+Con esa aclaración en el `README.md`, guardás los cambios (`Ctrl + S`) y hacés el push final en la terminal:
+
+
+git add .
+git commit -m "Docs: Aclarar rutas de ejecucion de PHP segun unidad de disco"
+git push origin main
 
  Diagramas de Arquitectura (UML)
 # 1. Diagrama de Casos de Uso
