@@ -20,4 +20,13 @@ if ($method === 'GET') {
         http_response_code(400);
         echo json_encode(["error" => "Datos incompletos"]);
     }
+} elseif ($method === 'PUT') {
+    $data = json_decode(file_get_contents("php://input"), true);
+    if (isset($data['id'], $data['stock'])) {
+        actualizarStock($data['id'], $data['stock']);
+        echo json_encode(["mensaje" => "Stock actualizado correctamente"]);
+    } else {
+        http_response_code(400);
+        echo json_encode(["error" => "Datos incompletos para actualizar stock"]);
+    }
 }
