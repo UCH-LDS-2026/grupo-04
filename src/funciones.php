@@ -1,18 +1,23 @@
 <?php
 require_once __DIR__ . '/../conexion.php';
 
+// Garantizar compatibilidad con el nombre de la variable de conexión
+if (!isset($pdo) && isset($conexion)) {
+    $pdo = $conexion;
+}
+
 // --- GESTIÓN DE PRODUCTOS Y STOCK ---
 function obtenerProductos() {
     global $pdo;
     $stmt = $pdo->query("SELECT * FROM productos");
-    return $stmt->fetchAll();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
 function obtenerStockCritico($limite = 5) {
     global $pdo;
     $stmt = $pdo->prepare("SELECT * FROM productos WHERE stock <= ?");
     $stmt->execute([$limite]);
-    return $stmt->fetchAll();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
 function crearProducto($nombre, $precio, $stock) {
@@ -21,11 +26,17 @@ function crearProducto($nombre, $precio, $stock) {
     return $stmt->execute([$nombre, $precio, $stock]);
 }
 
+function actualizarStock($id, $stock) {
+    global $pdo;
+    $stmt = $pdo->prepare("UPDATE productos SET stock = ? WHERE id = ?");
+    return $stmt->execute([$stock, $id]);
+}
+
 // --- GESTIÓN DE CLIENTES ---
 function obtenerClientes() {
     global $pdo;
     $stmt = $pdo->query("SELECT * FROM clientes");
-    return $stmt->fetchAll();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
 // --- PUNTO DE VENTA Y EMISIÓN DE RECIBOS ---
