@@ -74,24 +74,22 @@ Una vez iniciado el servidor, accede desde tu navegador:
 
 Permite visualizar los productos en tabla, agregar nuevos ítems y filtrar alertas de stock crítico.
 
-* **API REST - Todos los productos:** http://localhost:8000/src/productos.php
-* **API REST - Alertas de Bajo Stock:** http://localhost:8000/src/productos.php?alertas=1
+ API REST - Todos los productos: http://localhost:8000/src/productos.php
 
-## 📊 Diagramas de Arquitectura (UML)
+ API REST - Alertas de Bajo Stock: http://localhost:8000/src/productos.php?alertas=1
 
-### 1. Diagrama de Casos de Uso
-![Diagrama de Casos de Uso](docs/casos_uso.png)
-
-### 2. Diagrama de Clases (POO)
-![Diagrama de Clases](docs/casos_poo.png)
-
-### Pruebas Unitarias (Testing)
-El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orientada a Objetos en `src/Inventario.php` y pruebas automatizadas escritas en PHPUnit.
+ Diagramas de Arquitectura (UML)
+1. Diagrama de Casos de Uso
+2. Diagrama de Clases (POO)
+ Pruebas Unitarias (Testing)
+El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orientada a Objetos en src/Inventario.php y pruebas automatizadas escritas en PHPUnit.
 
 Para ejecutar los tests en tu máquina:
-```bash
-D:\xampp1\php\php.exe tests/phpunit-10.5.63.phar tests/InventarioTest.php
 
+Bash
+
+
+D:\xampp1\php\php.exe tests/phpunit-10.5.63.phar tests/InventarioTest.php
  Stack Tecnológico
 Frontend: HTML5, CSS3 (Bootstrap 5) y JavaScript Asincrónico (Fetch API).
 
@@ -104,13 +102,11 @@ Testing: PHPUnit 10.
 
 ---
 
-### Pasos para subir  el README:
-
-
-2. Corré estos comandos en la terminal de VS Code para mandar todo a GitHub:
+### Paso final en la terminal de VS Code:
+Una vez reemplazado y guardado el archivo (`Ctrl + S`), ejecutá esto para subir todo limpio:
 
 ```powershell
 git add .
-git commit -m "Docs: Agregar README final con imagenes de diagramas UML"
+git commit -m "Docs: Corregir formato README e imagenes de diagramas"
 git push origin main
 ````
