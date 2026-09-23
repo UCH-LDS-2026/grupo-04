@@ -28,6 +28,16 @@ function crearProducto($nombre, $precio, $stock) {
 
 function actualizarStock($id, $stock) {
     global $pdo;
+    
+    // Control de rango y límites en el backend
+    $stock = intval($stock);
+    if ($stock > 100000) {
+        $stock = 100000;
+    }
+    if ($stock < 0) {
+        $stock = 0;
+    }
+
     $stmt = $pdo->prepare("UPDATE productos SET stock = ? WHERE id = ?");
     return $stmt->execute([$stock, $id]);
 }
