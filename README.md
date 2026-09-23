@@ -123,7 +123,7 @@ Testing: PHPUnit 10.
 
 ---
 
-### Paso final en la terminal de VS Code:
+
 Una vez reemplazado y guardado el archivo (`Ctrl + S`), ejecutá esto para subir todo limpio:
 
 ```powershell
