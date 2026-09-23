@@ -80,10 +80,10 @@ Permite visualizar los productos en tabla, agregar nuevos ítems y filtrar alert
 
  Diagramas de Arquitectura (UML)
 1. Diagrama de Casos de Uso
-![image alt]( Aquí escriben el permalink de la imagen )
+![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/e7f9fbb1d399723c05aa08a49262db86ac35278f/docs/casos_poo.png)
 
 2. Diagrama de Clases (POO)
-![image alt]( Aquí escriben el permalink de la imagen )
+![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/e7f9fbb1d399723c05aa08a49262db86ac35278f/docs/casos_uso.png)
 
 
  Pruebas Unitarias (Testing)
