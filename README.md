@@ -80,15 +80,13 @@ Permite visualizar los productos en tabla, agregar nuevos ítems y filtrar alert
 2. Diagrama de Clases (POO)
 <img width="573" height="813" alt="image" src="https://github.com/user-attachments/assets/db3da246-5c73-43b2-a30c-1bf1c4315e0d" />
 
- Pruebas Unitarias (Testing)
-El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orientada a Objetos en src/Inventario.php y pruebas automatizadas escritas en PHPUnit.
+### Pruebas Unitarias (Testing)
+El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orientada a Objetos en `src/Inventario.php` y pruebas automatizadas escritas en PHPUnit.
 
 Para ejecutar los tests en tu máquina:
-
-Bash
-
-
+```bash
 D:\xampp1\php\php.exe tests/phpunit-10.5.63.phar tests/InventarioTest.php
+
  Stack Tecnológico
 Frontend: HTML5, CSS3 (Bootstrap 5) y JavaScript Asincrónico (Fetch API).
 
