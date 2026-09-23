@@ -79,7 +79,7 @@ Si ejecutas desde XAMPP en Windows (Ajustar según tu disco/unidad):
 C:\xampp\php\php.exe -S localhost:8000
 
 # Si XAMPP está en otra unidad o carpeta (ejemplo Disco D:):
-D:\xampp1\php\php.exe -S localhost:8000
+D:\xampp\php\php.exe -S localhost:8000
 Una vez iniciado el servidor, abre tu navegador e ingresa a: http://localhost:8000
 
 
