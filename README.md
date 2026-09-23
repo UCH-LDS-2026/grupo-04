@@ -95,11 +95,11 @@ git push origin main
  Diagramas de Arquitectura (UML)
 # 1. Diagrama de Casos de Uso
 
-![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/e7f9fbb1d399723c05aa08a49262db86ac35278f/docs/casos_poo.png)
+ ![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/690d624b88e6ed2cfb9b6dcb178bd83a7dbfbaca/docs/casosdeusos.png)
 
 # 2. Diagrama de Clases (POO)
 
-![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/e7f9fbb1d399723c05aa08a49262db86ac35278f/docs/casos_uso.png](https://github.com/UCH-LDS-2026/grupo-04/blob/1faf52109461cd3d1edeb0fdfbe8f41ac943061b/docs/clase.png)
+ ![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/690d624b88e6ed2cfb9b6dcb178bd83a7dbfbaca/docs/clase.png)
 
 
 ### Pruebas Unitarias (Testing)
