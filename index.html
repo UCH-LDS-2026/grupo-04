@@ -64,6 +64,7 @@
                                         <th>Precio</th>
                                         <th>Stock</th>
                                         <th>Estado</th>
+                                        <th class="text-center">Acción</th>
                                     </tr>
                                 </thead>
                                 <tbody id="tablaProductos">
@@ -110,7 +111,7 @@
             tbody.innerHTML = "";
 
             if (productos.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="5" class="text-center py-3 text-muted">No hay productos para mostrar</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="6" class="text-center py-3 text-muted">No hay productos para mostrar</td></tr>`;
                 return;
             }
 
@@ -127,9 +128,43 @@
                         <td>$${parseFloat(p.precio).toLocaleString('es-AR', {minimumFractionDigits: 2})}</td>
                         <td><strong>${p.stock}</strong> u.</td>
                         <td>${badge}</td>
+                        <td class="text-center">
+                            <button class="btn btn-sm btn-outline-primary" onclick="modificarStock(${p.id}, ${p.stock})">
+                                ✏️ Stock
+                            </button>
+                        </td>
                     </tr>
                 `;
             });
+        }
+
+        // Función para editar el stock en tiempo real
+        async function modificarStock(id, stockActual) {
+            const nuevoStockStr = prompt("Ingresá la nueva cantidad de stock:", stockActual);
+            
+            if (nuevoStockStr === null || nuevoStockStr.trim() === "") return;
+
+            const nuevoStock = parseInt(nuevoStockStr);
+            if (isNaN(nuevoStock) || nuevoStock < 0) {
+                alert("Por favor, ingresá un número de stock válido.");
+                return;
+            }
+
+            try {
+                const res = await fetch(API_URL, {
+                    method: "PUT",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ id: id, stock: nuevoStock })
+                });
+
+                if (res.ok) {
+                    cargarProductos(); // Recargar la tabla para actualizar la badge y cantidad
+                } else {
+                    alert("Error al actualizar el stock");
+                }
+            } catch (err) {
+                console.error("Error enviando actualización:", err);
+            }
         }
 
         // Agregar producto vía POST en formato JSON
