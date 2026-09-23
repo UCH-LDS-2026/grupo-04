@@ -81,6 +81,7 @@ Permite visualizar los productos en tabla, agregar nuevos ítems y filtrar alert
  Diagramas de Arquitectura (UML)
 1. Diagrama de Casos de Uso
 2. Diagrama de Clases (POO)
+
  Pruebas Unitarias (Testing)
 El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orientada a Objetos en src/Inventario.php y pruebas automatizadas escritas en PHPUnit.
 
@@ -88,8 +89,8 @@ Para ejecutar los tests en tu máquina:
 
 Bash
 
-
 D:\xampp1\php\php.exe tests/phpunit-10.5.63.phar tests/InventarioTest.php
+
  Stack Tecnológico
 Frontend: HTML5, CSS3 (Bootstrap 5) y JavaScript Asincrónico (Fetch API).
 
