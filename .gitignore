@@ -11,3 +11,5 @@ Thumbs.db
 Logs de errores del servidor local
 error_log
 *.log
+
+.phpunit.result.cache
