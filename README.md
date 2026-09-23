@@ -74,9 +74,8 @@ Una vez iniciado el servidor, accede desde tu navegador:
 
 Permite visualizar los productos en tabla, agregar nuevos ítems y filtrar alertas de stock crítico.
 
- API REST - Todos los productos: http://localhost:8000/src/productos.php
-
- API REST - Alertas de Bajo Stock: http://localhost:8000/src/productos.php?alertas=1
+* **API REST - Todos los productos:** http://localhost:8000/src/productos.php
+* **API REST - Alertas de Bajo Stock:** http://localhost:8000/src/productos.php?alertas=1
 
 ## 📊 Diagramas de Arquitectura (UML)
 
