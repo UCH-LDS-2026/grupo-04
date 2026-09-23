@@ -99,7 +99,7 @@ git push origin main
 
 # 2. Diagrama de Clases (POO)
 
-![image alt]([https://github.com/UCH-LDS-2026/grupo-04/blob/e7f9fbb1d399723c05aa08a49262db86ac35278f/docs/casos_uso.png](https://github.com/UCH-LDS-2026/grupo-04/blob/1faf52109461cd3d1edeb0fdfbe8f41ac943061b/docs/clase.png))
+![image alt](https://github.com/UCH-LDS-2026/grupo-04/blob/e7f9fbb1d399723c05aa08a49262db86ac35278f/docs/casos_uso.png](https://github.com/UCH-LDS-2026/grupo-04/blob/1faf52109461cd3d1edeb0fdfbe8f41ac943061b/docs/clase.png)
 
 
 ### Pruebas Unitarias (Testing)
