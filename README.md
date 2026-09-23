@@ -33,7 +33,7 @@ Antes de comenzar, asegúrate de tener instalado en tu computadora:
 
 Abre tu terminal o consola de comandos y ejecuta:
 
-````bash
+
 git clone [https://github.com/UCH-LDS-2026/grupo-04.git](https://github.com/UCH-LDS-2026/grupo-04.git)
 cd grupo-04
 2. Configurar la Base de Datos
@@ -63,7 +63,7 @@ Si tu MySQL local tiene contraseña, modifícala en ese archivo.
 4. Iniciar la Aplicación
 Abre la terminal en la carpeta raíz del proyecto y ejecuta el servidor local de PHP:
 
-Bash
+
 
 
 php -S localhost:8000
@@ -91,7 +91,7 @@ El sistema cuenta con la lógica de negocio encapsulada bajo Programación Orien
 
 Para ejecutar los tests en tu máquina:
 
-Bash
+
 
 D:\xampp1\php\php.exe tests/phpunit-10.5.63.phar tests/InventarioTest.php
 
@@ -114,4 +114,4 @@ Una vez reemplazado y guardado el archivo (`Ctrl + S`), ejecutá esto para subir
 git add .
 git commit -m "Docs: Corregir formato README e imagenes de diagramas"
 git push origin main
-````
+
